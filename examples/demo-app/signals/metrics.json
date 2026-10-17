@@ -1,0 +1,1 @@
+{"endpoints":{"/api/orders":{"error_rate":0.08,"p95_ms":2450,"rpm":120},"/api/orders/{id}":{"error_rate":0.01,"p95_ms":310,"rpm":400},"/api/prices/refresh":{"error_rate":0.03,"p95_ms":1950,"rpm":30}}}

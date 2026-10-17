@@ -1,0 +1,1 @@
+[{"category":"reliability","confidence":"high","effort":"S","file_globs":["*.py"],"id":"CUSTOM001","impact":"Unfinished work ships to production.","message":"TODO marker found","pattern":"TODO","recommendation":"Resolve it or convert it into a tracked ticket.","severity":"low","title":"TODO left in code"}]

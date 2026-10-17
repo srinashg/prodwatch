@@ -1,0 +1,21 @@
+2026-10-16T19:00:01Z INFO  starting order service...
+2026-10-16T19:00:04Z INFO  GET /api/orders 200 42ms
+2026-10-16T19:00:09Z WARN  upstream api.example.com slow: 2100ms
+2026-10-16T19:00:12Z ERROR ValueError: invalid literal for int() in orders.py line 88
+Traceback (most recent call last):
+  File "app.py", line 42, in get_order
+ValueError: invalid literal for int() with base 10: 'abc'
+2026-10-16T19:00:13Z ERROR GET /api/orders 500 12ms
+2026-10-16T19:00:18Z INFO  GET /api/orders/42 200 280ms
+2026-10-16T19:00:21Z ERROR TimeoutError: upstream api.example.com timed out after 30s
+2026-10-16T19:00:22Z ERROR POST /api/prices/refresh 504 30012ms
+2026-10-16T19:00:25Z WARN  retrying upstream call (attempt 1)
+2026-10-16T19:00:29Z ERROR ValueError: invalid literal for int() in orders.py line 88
+2026-10-16T19:00:31Z ERROR GET /api/orders 500 9ms
+2026-10-16T19:00:35Z INFO  GET /api/orders/7 200 310ms
+2026-10-16T19:00:40Z ERROR TimeoutError: upstream api.example.com timed out after 30s
+2026-10-16T19:00:44Z ERROR ValueError: invalid literal for int() in orders.py line 88
+2026-10-16T19:00:45Z ERROR GET /api/orders 500 11ms
+2026-10-16T19:00:50Z WARN  db pool exhausted, waiting for connection
+2026-10-16T19:00:55Z ERROR ValueError: invalid literal for int() in orders.py line 88
+2026-10-16T19:01:02Z INFO  GET /api/orders/9 200 295ms

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prodwatch"
+version = "0.1.0"
+description = "AI agent starter: analyze production issues from any repo + observability signals"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Srinesh" }]
+dependencies = []
+
+[project.scripts]
+prodwatch = "prodwatch.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
